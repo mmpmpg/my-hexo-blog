@@ -1,0 +1,13 @@
+[build]
+  publish = "public"
+  command = "npm install && hexo generate"
+
+[build.environment]
+  NODE_VERSION = "22.19.0"  # 根据你的Node版本调整
+
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
