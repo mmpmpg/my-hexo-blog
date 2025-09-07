@@ -8,8 +8,9 @@ subtitle: ''
 description: ''
 keywords:
 author: John Doe
-language: en
 timezone: ''
+theme: fluid  # 指定主题
+language: zh-CN  # 指定语言，会影响主题显示的语言，按需修改
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -29,6 +30,8 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - admin/**
+  - admin/*.html
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -104,6 +107,3 @@ deploy:
   type: ''
 
 # 确保Hexo不会处理admin目录
-skip_render:
-  - admin/**
-  - admin/*.html
