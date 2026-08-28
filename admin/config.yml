@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main
+  branch: master
 
 site_url:   # 部署后更新为你的实际域名
 publish_mode: editorial_workflow
